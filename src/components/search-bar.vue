@@ -48,7 +48,6 @@ export default {
     console.log('b没有a2:',b.a2)
     a.call(b)
     console.log('b有了a2:',b.a2)
-    var eleButton = document.getElementById('button');
     async function newUpload(){
       // 打开文件
       const arrFileHandle = await window.showOpenFilePicker({
