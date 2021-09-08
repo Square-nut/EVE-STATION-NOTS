@@ -51,13 +51,13 @@ export default {
     async function newUpload(){
       // 打开文件
       const arrFileHandle = await window.showOpenFilePicker({
-            types: [{
-                description: 'Images',
-                accept: {
-                  'image/*': ['.png', '.gif', '.jpeg', '.jpg', '.webp']
-                }
-          }],
-            multiple: true
+        types: [{
+            description: 'Images',
+            accept: {
+              'image/*': ['.png', '.gif', '.jpeg', '.jpg', '.webp']
+            }
+      }],
+        multiple: true
       });
       
       // 遍历选择的文件
